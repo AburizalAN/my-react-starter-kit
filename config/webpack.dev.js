@@ -5,7 +5,7 @@ const path = require("path");
 const devConfig = {
   mode: "development",
   devServer: {
-    static: path.join(__dirname, 'public'),
+    historyApiFallback: true,
     port: 3003,
     open: true,
     hot: true,
